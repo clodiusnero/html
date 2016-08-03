@@ -1,9 +1,101 @@
-﻿logo {
+﻿.pagecontent:before,
+.pagecontent:after {
+    content: "";
+    display: table;
+}
+
+.pagecontent:after {
+    clear: both;
+}
+
+.pagecontent {
+    zoom: 1;
+}
+
+[class^="grid-"],
+[class*="grid-"] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+[class^="grid-"]:first-child,
+[class*=" grid-"]:first-child {
+    padding-left: 0px;
+}
+
+.grideven [class^="grid-"]:first-child,
+.grideven [class*=" grid-"]:first-child {
+    padding-left: 10px;
+}
+
+[class^="grid-"]:last-child,
+[class*=" grid-"]:last-child {
+    padding-right: 0px;
+}
+
+.grideven [class^="grid-"]:last-child,
+.grideven [class*=" grid-"]:last-child {
+    padding-right: 10px;
+}
+
+.grid-whole {
+    width: 100%;
+}
+
+.grid-three {
+    width: 75%;
+}
+
+.grid-half {
+    width: 50%;
+}
+
+.grid-two {
+    width: 66.6665%;
+}
+
+.grid-one {
+    width: 33.3332%;
+}
+
+.grid-fourth {
+    width: 25%;
+}
+
+.pagecontent {
+    width: 0.890625%;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+    .pagecontent {
+        width: auto;
+        padding: 0 20px;
+    }
+    .grid-whole,
+    .grid-three,
+    .grid-half,
+    .grid-two,
+    .grid-one,
+    .grid-fourth {
+        width: 100%;
+    }
+    .hide-mobile {
+        display: none !important;
+    }
+}
+
+
+logo {
     background: url("/img/logo.png") no-repeat;
     width: 228px;
     height: 75px;
     display: block;
 }
+
+
 
 header {
     color: black;
