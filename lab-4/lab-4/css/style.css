@@ -120,10 +120,10 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 nav ul li a {
-    padding: 0 5px;
+    padding: 0 10px;
     color: #fff;
 }
