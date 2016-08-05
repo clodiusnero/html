@@ -1,19 +1,173 @@
-﻿.pagecontent:before,
-.pagecontent:after {
-    content: "";
+﻿/*
+Index
+FONT
+H1-H6
+A
+MEDIACONTENT-ALIGN
+SCALING
+
+
+*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+
+pre {
+    overflow: auto;
+}
+
+input {
+    line-height: normal;
+}
+
+template {
+    display: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: auto !important;
+    width: 100%;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'rhino';
+    src: url('/fonts/rhino.ttf');
+}
+
+@font-face {
+    font-family: 'exo';
+    src: url('/fonts/exo-regular.otf');
+}
+@font-face {
+    font-family: 'amaranth';
+    src: url('/fonts/amaranth-regular.otf');
+}
+@font-face {
+    font-family: 'journal';
+    src: url('/fonts/journal.ttf');
+}
+
+
+h1 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+h5 {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+a {
+    color: #259af4;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover,
+a:focus {
+    color: #00b4f9;
+    text-decoration: none;
+}
+
+figure {
+    margin: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.grid:before,
+.grid:after {
+    content: " ";
     display: table;
 }
 
-.pagecontent:after {
+.grid:after {
     clear: both;
 }
 
-.pagecontent {
-    zoom: 1;
-}
-
 [class^="grid-"],
-[class*="grid-"] {
+[class*=" grid-"] {
     float: left;
     padding-left: 10px;
     padding-right: 10px;
@@ -24,8 +178,8 @@
     padding-left: 0px;
 }
 
-.grideven [class^="grid-"]:first-child,
-.grideven [class*=" grid-"]:first-child {
+.grid-even [class^="grid-"]:first-child,
+.grid-even [class*=" grid-"]:first-child {
     padding-left: 10px;
 }
 
@@ -34,9 +188,24 @@
     padding-right: 0px;
 }
 
-.grideven [class^="grid-"]:last-child,
-.grideven [class*=" grid-"]:last-child {
+.grid_even [class^="grid-"]:last-child,
+.grid_even [class*=" grid-"]:last-child {
     padding-right: 10px;
+}
+
+[class^="grid-"] img,
+[class*=" grid-"] img {
+    max-width: 100%;
+}
+
+[class^="grid-"].no-gutters,
+[class*=" grid-"].no-gutters {
+    padding: 0 !important;
+}
+
+.no-gutters [class^="grid-"],
+.no-gutters [class*=" grid-"] {
+    padding: 0 !important;
 }
 
 .grid-whole {
@@ -63,14 +232,97 @@
     width: 25%;
 }
 
-.pagecontent {
-    width: 0.890625%;
+.container {
+    width: 1140px;
     margin: 0 auto;
     position: relative;
 }
 
+.container:before,
+.container:after {
+    content: " ";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 76px;
+    font-family: Amaranth;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    z-index: 100;
+}
+
+.logo {
+    background: url("/img/logo-header-bright.png") no-repeat;
+    width: 228px;
+    height: 76px;
+    display: block;
+}
+
+nav {
+    float: right;
+    padding-top: 29px;
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+nav ul li a {
+    padding: 0 5px;
+    color: #fff;
+}
+
+.landing {
+    background: url("/img/start-maldives.jpg") no-repeat center center;
+    margin-top: 0;
+    background-size: cover;
+    height: 1000px;
+}
+
+#intro-music {
+    padding-top: 106px;
+    float: right;
+}
+
+.landing {
+    background: url("/img/start-maldives.jpg") no-repeat center center;
+    margin-top: 0;
+    background-size: cover;
+    height: 1000px;
+}
+.journey {
+    background: url("/img/night.jpg") no-repeat center center;
+    margin-top: 0;
+    background-size: cover;
+    height: 1000px;
+}
+
 @media only screen and (max-width: 767px) {
-    .pagecontent {
+    .grid {
+        width: auto;
+        padding: 0 20px;
+    }
+    .container {
         width: auto;
         padding: 0 20px;
     }
@@ -82,48 +334,4 @@
     .grid-fourth {
         width: 100%;
     }
-    .hide-mobile {
-        display: none !important;
-    }
-}
-
-
-logo {
-    background: url("/img/logo.png") no-repeat;
-    width: 228px;
-    height: 75px;
-    display: block;
-}
-
-
-
-header {
-    color: black;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 15px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    font-weight: 300;
-}
-
-nav {
-    float: right;
-    margin-top: 10px;
-}
-
-nav ul {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-left: 10px;
-}
-
-nav ul li a {
-    padding: 0 10px;
-    color: #fff;
 }

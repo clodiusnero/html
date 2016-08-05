@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html>
+<html class="">
 
 <head>
     <meta charset="utf-8">
@@ -10,27 +11,43 @@
     <meta property="og:description" content="Welcome to your paradise, on our island, in the Maldives.">
     <meta name="description" content="Welcome to your paradise, on our island, in the Maldives.">
     <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" media="all" rel="stylesheet" type="text/css">
     <title>Keela</title>
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    </head>
 
-<header>
-    <div class="pagecontent">
-        <div class="grid-one">
-            <a href="/" class="logo"></a>
+<body style="overflow-x: hidden;">
+    <header>
+        <div class="container">
+            <div class="grid">
+                <div class="grid-fourth">
+                    <a href="/" class="logo"></a>
+                </div>
+                <div class="grid-three">
+                    <nav>
+                        <ul>
+                            <li><a href="#tour" title="tour">Tour</a></li>
+                            <li><a href="/game" title="game">Maldevian Game</a></li>
+                            <li><a href="/contact" title="Contact us">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-        <div class="grid-one">
-            <audio controls>
-                <source src="audio/Corridor of Time - Xavier Dang.mp3" type="audio/mpeg">
+    </header>
+    <section class="landing">
+        <div class="container">
+            <audio id="intro-music" controls>
+                <source src="sound/intro.mp3" type="audio/mpeg">
             </audio>
         </div>
-        <div class="grid-one">
-            <nav>
-                <ul>
-                    <li><a href="#tour" title="Product tour">Tour</a></li>
-                    <li><a href="/game" title="game">Game</a></li>
-                    <li><a href="/contact" title="Contact us">Contact us</a></li>
-                </ul>
-            </nav>
+    </section>
+    <article class="journey">
+        <div class="container">
+
         </div>
-    </div>
-</header>
+        </article>
+
+</body>
+</html>
