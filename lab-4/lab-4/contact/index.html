@@ -9,9 +9,9 @@
     <meta name="MobileOptimized" content="360">
     <meta property="og:image" content="/images/fb-keela.jpg">
     <meta property="og:description" content="Welcome to your paradise, on our island, in the Maldives.">
-    <meta name="description" content="Welcome to your paradise, on our island, in the Maldives.">
-    <link href="../css/style.css" media="all" rel="stylesheet" type="text/css">
-    <title>Keela</title>
+    <meta name="description" content="How to get in touch with us.">
+    <link href="contact.css" media="all" rel="stylesheet" type="text/css">
+    <title>Contact</title>
     </head>
 
 <body style="overflow-x: hidden;">
@@ -33,9 +33,66 @@
             </div>
         </div>
     </header>
-    <section class="contact">
+    <section id="adress">
         <div class="container">
-        </div>
-        </section>
+            <div class="grid-half">
+                <h1>ADRESS</h1>
+                <span>holidayhomekelaa, Kelaa.<br />Maldives<br />Phone: +(960) 791 7976<br /></span>
+            </div>
+            <div class="grid-half">
+                <a href="mailto:kristofer.mikaelsson@vuxutb.se" target="_blank">info@keelaisland.com</a><br>
+                <a href="https://facebook.com" target="_blank">facebook.com/keela-island</a><br />
+                <a href="https://twitter.com" target="_blank">twitter.com/keela-island</a>
+            </div>
+            </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="grid-half">
+                <h1>CONTACT US</h1>
+                <form name="contact" action="mailto:kristofer.mikaelsson@vuxutb.se" method="post">
+                    <label for="name">Name*</label>
+                    <input name="name" maxlength="50" required />
+                    <label for="mail">E-mail*</label>
+                    <input type="email" name="email" maxlength="50" required />
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" maxlength="50" />
+                    <label for="msg">Message*</label>
+                    <textarea id="msg" name="message" required></textarea>
+                    <div class="rating">
+                        <input class="rating rating-10" id="rating-10" type="radio" name="rating" />
+                        <label class="rating rating-10" for="rating-10"></label>
+                        <input class="rating rating-9" id="rating-9" type="radio" name="rating" />
+                        <label class="rating rating-9" for="rating-9"></label>
+                        <input class="rating rating-8" id="rating-8" type="radio" name="rating" />
+                        <label class="rating rating-8" for="rating-8"></label>
+                        <input class="rating rating-7" id="rating-7" type="radio" name="rating" />
+                        <label class="rating rating-7" for="rating-7"></label>
+                        <input class="rating rating-6" id="rating-6" type="radio" name="rating" />
+                        <label class="rating rating-6" for="rating-6"></label>
+                        <input class="rating rating-5" id="rating-5" type="radio" name="rating" />
+                        <label class="rating rating-5" for="rating-5"></label>
+                        <input class="rating rating-4" id="rating-4" type="radio" name="rating" />
+                        <label class="rating rating-4" for="rating-4"></label>
+                        <input class="rating rating-3" id="rating-3" type="radio" name="rating" />
+                        <label class="rating rating-3" for="rating-3"></label>
+                        <input class="rating rating-2" id="rating-2" type="radio" name="rating" />
+                        <label class="rating rating-2" for="rating-2"></label>
+                        <input class="rating rating-1" id="rating-1" type="radio" name="rating" />
+                        <label class="rating rating-1" for="rating-1"></label>
+                        <label for="rating">Rate page</label>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="grid-half">
+                <h1>GOOGLE</h1><a href="https://goo.gl/maps/wWy1kj1PgFt" target="_blank"><img src="../img/map.png" alt="map" /></a>
+            </div>
+            </div>
+</section>
+
+
 </body>
 </html>

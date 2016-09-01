@@ -1,21 +1,16 @@
-$(window).scroll(function() {
-// 150 = The point you would like to fade the nav in.
-  
-	if ($(window).scrollTop() > 150 ){
-    
- 		$('.header').addClass('show');
-    
-  } else {
-    
-    $('.header').removeClass('show');
-    
- 	};   	
+var toggle = document.getElementById('toggle'),
+  wrapper = document.querySelectorAll('.subscribe'),
+  submit = document.getElementById('submit'),
+  success = document.querySelectorAll('.subscribe__success'),
+  content = document.querySelectorAll('.subscribe__wrapper');
+
+toggle.addEventListener('click', function() {
+  this.className += ' subscribe__toggle__hidden';
+  wrapper[0].className += ' subscribe-1__active';
 });
 
-$('.scroll').on('click', function(e){		
-		e.preventDefault()
-    
-  $('html, body').animate({
-      scrollTop : $(this.hash).offset().top
-    }, 1500);
+submit.addEventListener('click', function() {
+  success[0].className += ' subscribe__success--active';
+  wrapper[0].className += ' subscribe-1__success';
+  content[0].style.display = 'none';
 });

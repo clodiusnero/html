@@ -1,14 +1,4 @@
-﻿/*
-Index
-FONT
-H1-H6
-A
-MEDIACONTENT-ALIGN
-SCALING
-
-
-*/
-
+﻿
 article,
 aside,
 details,
@@ -25,19 +15,45 @@ summary {
     display: block;
 }
 
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
+hr {
+    box-sizing: content-box;
+    height: 0;
 }
 
+pre {
+    overflow: auto;
+}
+
+input {
+    line-height: normal;
+}
+
+template {
+    display: none;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    *:before,
+    *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 
 body {
     margin: 0;
     overflow-x: auto !important;
     width: 100%;
     font-weight: normal;
+    background-color: #f0f7d0;
+    font-family: journal;
+    font-size: 30px;
+    color: #0081ff;
 }
 
 @font-face {
@@ -49,19 +65,77 @@ body {
     font-family: 'exo';
     src: url('/fonts/exo-regular.otf');
 }
+
 @font-face {
     font-family: 'amaranth';
     src: url('/fonts/amaranth-regular.otf');
 }
+
 @font-face {
     font-family: 'journal';
     src: url('/fonts/journal.ttf');
 }
 
+form {
+    width: 400px;
+}
+
+form input{
+  background-color: #f0f7d0;
+}
+
+label {
+    display: inline-block;
+    width: 60px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+}
+
+.button {
+    float: right;
+    padding-right: 35px
+}
+
+button {
+    font-family: journal;
+    color: #0081ff;
+    background-color: #f0f7d0;
+    font-size: 36px;
+    font-weight: normal;
+    border: none;
+}
+
+.rating {
+      unicode-bidi: bidi-override;
+      direction: rtl;
+      text-align: left;
+}
+
+input.rating { 
+    display: none; 
+    }
+
+label.rating {
+  width: 24px;
+}
+
+input.rating:checked ~ label.rating:before {
+   content: "\2605";
+}
+
+label.rating:before {
+   content: "\2606";
+}
 
 h1 {
     font-size: 30px;
     font-weight: normal;
+    line-height: 0;
 }
 
 h2 {
@@ -90,16 +164,16 @@ h6 {
 }
 
 a {
-    color: #259af4;
+    color: #0081ff;
     text-decoration: none;
     cursor: pointer;
 }
 
-a:hover,
-a:focus {
-    color: #00b4f9;
-    text-decoration: none;
-}
+    a:hover,
+    a:focus {
+        color: #00b4f9;
+        text-decoration: none;
+    }
 
 figure {
     margin: 0;
@@ -116,6 +190,16 @@ video {
 
 textarea {
     resize: vertical;
+    vertical-align: top;
+    height: 200px;
+    background-color: #f0f7d0
+}
+
+input, textarea {
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #0081ff;
 }
 
 .grid:before,
@@ -135,10 +219,10 @@ textarea {
     padding-right: 10px;
 }
 
-[class^="grid-"]:first-child,
-[class*=" grid-"]:first-child {
-    padding-left: 0px;
-}
+    [class^="grid-"]:first-child,
+    [class*=" grid-"]:first-child {
+        padding-left: 0px;
+    }
 
 .grid-even [class^="grid-"]:first-child,
 .grid-even [class*=" grid-"]:first-child {
@@ -200,15 +284,15 @@ textarea {
     position: relative;
 }
 
-.container:before,
-.container:after {
-    content: " ";
-    display: table;
-}
+    .container:before,
+    .container:after {
+        content: " ";
+        display: table;
+    }
 
-.container:after {
-    clear: both;
-}
+    .container:after {
+        clear: both;
+    }
 
 header {
     position: fixed;
@@ -226,7 +310,7 @@ header {
 }
 
 .logo {
-    background: url("/img/logo-header-bright.png") no-repeat;
+    background: url("/img/logo-header.png") no-repeat;
     width: 228px;
     height: 76px;
     display: block;
@@ -251,29 +335,22 @@ nav ul li {
 
 nav ul li a {
     padding: 0 5px;
-    color: #fff;
+    color:  #0081ff;
+;
 }
 
-.landing {
-    background: url("/img/start-maldives.jpg") no-repeat center center;
-    margin-top: 0;
-    background-size: cover;
-    height: 1000px;
-}
-
-#intro-music {
-    padding-top: 110px;
+.stamp {
     float: right;
+    padding-left: 30px;
 }
 
-.journey {
-    background: url("/img/night.jpg") no-repeat center center;
-    margin-top: 0;
-    background-size: cover;
-    height: 1000px;
+#adress {
+    padding-top: 100px;
 }
 
-
+#contact {
+    padding-top: 30px;
+}
 
 @media only screen and (max-width: 767px) {
     .grid {
@@ -297,18 +374,16 @@ nav ul li a {
 
     header {
         background-color: #fff;
-        opacity: 0.8;
     }
 
         
     .logo {
-        background: url("/img/logo-header.png") no-repeat;
         margin: 0 auto;
     }
     
     nav {
         text-align: center;
-        margin-top: 10px;
+        margin-top: 20px;
         float: none;
     }
     
@@ -320,10 +395,9 @@ nav ul li a {
         padding: 0 5px;
         color: #000;
     }
+    
+    #adress {
+        padding-top: 200px;
 
-    .landing {
-        padding-top: 120px;
     }
-
 }
-

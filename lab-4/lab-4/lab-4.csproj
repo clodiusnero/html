@@ -95,14 +95,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="contact\index.html" />
+    <Content Include="contact\contact.css" />
     <Content Include="css\normalize.css" />
     <Content Include="css\style.css" />
+    <Content Include="game\index.html" />
+    <Content Include="img\binder-contact.jpg" />
     <Content Include="img\contact_background.jpg" />
+    <Content Include="img\facebook_drawn.png" />
     <Content Include="img\fb-keela.jpg" />
+    <Content Include="img\google-stamped.png" />
     <Content Include="img\logo-header-bright.png" />
+    <Content Include="img\logo-header.png" />
     <Content Include="img\logo.png" />
+    <Content Include="img\map.png" />
     <Content Include="img\night.jpg" />
     <Content Include="img\start-maldives.jpg" />
+    <Content Include="img\table.jpg" />
+    <Content Include="img\twitter-stamp.png" />
     <Content Include="index.html" />
     <Content Include="js\index.js" />
     <Content Include="packages.config" />
@@ -130,7 +139,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="game\" />
     <Folder Include="vid\" />
   </ItemGroup>
   <PropertyGroup>
