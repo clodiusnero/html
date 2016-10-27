@@ -10,11 +10,17 @@
     <meta property="og:image" content="/images/fb-keela.jpg">
     <meta property="og:description" content="Keela - The Maldivian game.">
     <meta name="description" content="Keela - The Maldivian game.">
-    <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+    <link href="game.css" media="all" rel="stylesheet" type="text/css">
     <title>The Maldivian Game</title>
+    <script src="../scripts/JavaScript.js"></script>
 </head>
 
 <body style="overflow-x: hidden;">
+    <audio id="intro-music" autoplay>
+        <source src="../sound/game-music.mp3" type="audio/mpeg">
+    </audio> 
+    <span id="gamemouse"></span>
+    
     <header>
         <div class="container">
             <div class="grid">
@@ -24,7 +30,7 @@
                 <div class="grid-three">
                     <nav>
                         <ul>
-                            <li><a href="#tour" title="tour">Tour</a></li>
+                            <li><a href="../index.html#tour" title="tour">Tour</a></li>
                             <li><a href="/game" title="game">Maldevian Game</a></li>
                             <li><a href="/contact" title="Contact us">Contact us</a></li>
                         </ul>
@@ -33,12 +39,62 @@
             </div>
         </div>
     </header>
+
     <section class="landing">
         <div class="container">
-            <audio id="game-music">
-                <source src="sound/intro.mp3" type="audio/mpeg">
-            </audio>
-        </div>
+            <div class="game" onclick="playSound('../sound/gun.mp3')">
+                <input class="input-target input-target1" type="radio" id="target1">
+                <input class="input-target input-target2" type="radio" id="target2">
+                <input class="input-target input-target3" type="radio" id="target3">
+                <input class="input-target input-target4" type="radio" id="target4">
+                <label for="target1" class="animal animal1"><span></span></label>
+                <label for="target2" class="animal animal2"><span></span></label>
+                <label for="target3" class="animal animal3"><span></span></label>
+                <label for="target4" class="animal animal4"><span></span></label>
+            <h1 id="landing-h1">KILL THEM ALL!!<br />If you fail reload page.</h1>
+                </div>
+            </div>
     </section>
+    
+    <footer>
+        <div class="container">
+            <div class="grid">
+                <div class="grid-fourth">
+                    <h3>Keela Island</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                        <li><a href="/game/">Game</a></li>
+                        <li><a href="../index.html#tour" title="tour">Tour</a></li>
+                    </ul>
+                </div>
+                <div class="grid-fourth">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="/">Best Rates Guarantee</a></li>
+                        <li><a href="/">Destination Keela</a></li>
+                        <li><a href="/">Affiliates</a></li>
+                        <li><a href="/">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="grid-fourth">
+                    <h3>Experience</h3>
+                    <ul>
+                        <li><a href="/">Maldives</a></li>
+                        <li><a href="/">Dining</a></li>
+                        <li><a href="/">Activities</a></li>
+                        <li><a href="/">Events</a></li>
+                    </ul>
+                </div>
+                <div class="grid-fourth">
+                    <h3>Newsletter</h3>
+                    <form>
+                        <input type="email" name="email" placeholder="Enter your email" onfocus="this.placeholder=''" onblur="this.placeholder='Your email'" autocomplete="off">
+                        <button type="submit">Subscribe<i class="fa fa-envelope-o"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
     </body>
 </html>

@@ -1,15 +1,4 @@
-﻿/*
-Index
-FONT
-H1-H6
-A
-MEDIACONTENT-ALIGN
-SCALING
-
-
-*/
-
-article,
+﻿article,
 aside,
 details,
 figcaption,
@@ -35,7 +24,7 @@ html {
 
 body {
     margin: 0;
-    overflow-x: auto !important;
+    overflow-x: auto;
     width: 100%;
     font-weight: normal;
 }
@@ -56,6 +45,16 @@ body {
 @font-face {
     font-family: 'journal';
     src: url('/fonts/journal.ttf');
+}
+
+@font-face {
+    font-family: 'montypython';
+    src: url('/fonts/Montserrat-Regular.otf');
+}
+
+@font-face {
+    font-family: 'montypythonthin';
+    src: url('/fonts/Montserrat-Light.otf');
 }
 
 
@@ -270,9 +269,237 @@ nav ul li a {
     background: url("/img/night.jpg") no-repeat center center;
     margin-top: 0;
     background-size: cover;
-    height: 1000px;
+    height: 920px;
 }
 
+.slides {
+    padding: 0;
+    width: 1024px;
+    height: 576px;
+    display: block;
+    margin: 100px auto;
+    position: relative;
+}
+
+
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { 
+   display: none;
+
+}
+
+.slide-container {
+    display: block;
+}
+
+.slide {
+    top: 0;
+    width: 1024px;
+    height: 576px;
+    position: absolute;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+}
+
+.image-textbox {
+    color: #fff;
+}
+
+.image-textbox h1 {
+    font-size: 3em;
+    font-family: journal;
+    line-height: 0;
+}
+
+.image-textbox p {
+    font-family: montypythonthin;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 48px;
+    height: 100%;
+    position: absolute;
+    color: #fff;
+    font-size: 48pt;
+    text-align: center;
+    line-height: 576px;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.nav .next {
+    right: 0;
+}
+
+input:checked + .slide-container  .slide {
+    transform: scale(1);
+}
+
+input:checked + .slide-container .nav label { 
+    display: block;
+
+}
+
+.nav-dots {
+    position: absolute;
+    bottom: 9px;
+	width: 100%;
+	height: 11px;
+	display: block;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: #fff;
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4
+ {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.television {
+    background: #04668c;
+    background-size: cover;
+    height: 555px;
+    text-align: center;
+}
+
+.television-two {
+    background: #000;
+    background-size: cover;
+    height: 655px;
+    text-align: center;
+}
+
+.television-description {
+    padding-top: 100px;
+}
+
+.teldescription-two {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.tv-frame {
+    padding-top: 100px;
+    max-width: 975px;
+    max-height: 655px;
+}
+
+.frame-two {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 975px;
+    max-height: 655px;
+}
+
+iframe {
+    box-sizing: border-box;
+    background: url(/img/television.png) center center no-repeat;
+    background-size: contain;
+    padding-top: 57px;
+    padding-bottom: 93px;
+    padding-left: 68px;
+    padding-right: 190px;
+}
+
+footer {
+    background-color: #fff;
+    font-family: Amaranth;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+footer ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+
+}
+
+footer form {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+footer input {
+  position: relative;
+  top: 0;
+  background-color: #ffffff;
+  color: #898B8C;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+footer button {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  border-radius: 5px;
+  top: -50px;
+  background-color: #259af4;
+  font-family: journal;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+footer button:hover {
+  background-color: #27B2FF;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer form:hover > input {
+  top: 50px;
+  border-radius: 0 0 5px 5px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+footer form:hover > button {
+  border-radius: 5px 5px 0 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
 
 
 @media only screen and (max-width: 767px) {
@@ -324,6 +551,5 @@ nav ul li a {
     .landing {
         padding-top: 120px;
     }
-
 }
 

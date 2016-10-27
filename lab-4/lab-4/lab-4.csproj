@@ -98,20 +98,34 @@
     <Content Include="contact\contact.css" />
     <Content Include="css\normalize.css" />
     <Content Include="css\style.css" />
+    <Content Include="game\game.css" />
+    <Content Include="game\game-first.css" />
     <Content Include="game\index.html" />
+    <Content Include="img\097668-black-ink-grunge-stamp-textures-icon-social-media-logos-facebook-logo-square.png" />
+    <Content Include="img\2-Sunrise-in-the-West-Maldives.jpg" />
+    <Content Include="img\28-Turtle.jpg" />
+    <Content Include="img\4-Cocoa-Island.jpg" />
+    <Content Include="img\animal1.png" />
+    <Content Include="img\animal2.png" />
+    <Content Include="img\animal3.png" />
+    <Content Include="img\animal4.png" />
     <Content Include="img\binder-contact.jpg" />
     <Content Include="img\contact_background.jpg" />
+    <Content Include="img\crosshair2.png" />
     <Content Include="img\facebook_drawn.png" />
     <Content Include="img\fb-keela.jpg" />
     <Content Include="img\google-stamped.png" />
     <Content Include="img\logo-header-bright.png" />
     <Content Include="img\logo-header.png" />
     <Content Include="img\logo.png" />
+    <Content Include="img\maldives-glowing-beach.jpg" />
     <Content Include="img\map.png" />
     <Content Include="img\night.jpg" />
+    <Content Include="img\small-aquarium.png" />
+    <Content Include="img\spatter.png" />
     <Content Include="img\start-maldives.jpg" />
     <Content Include="img\table.jpg" />
-    <Content Include="img\twitter-stamp.png" />
+    <Content Include="img\television.png" />
     <Content Include="index.html" />
     <Content Include="js\index.js" />
     <Content Include="packages.config" />
@@ -122,6 +136,8 @@
     <Content Include="fonts\exo-regular.otf" />
     <Content Include="fonts\rhino.ttf" />
     <Content Include="fonts\journal.ttf" />
+    <Content Include="fonts\Montserrat-Regular.otf" />
+    <Content Include="fonts\Montserrat-Light.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -132,6 +148,9 @@
   <ItemGroup>
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="scripts\JavaScript.js" />
+    <Content Include="sound\game-music.mp3" />
+    <Content Include="sound\gun.mp3" />
     <Content Include="sound\intro.mp3" />
     <Content Include="Web.config" />
   </ItemGroup>

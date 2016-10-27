@@ -1,5 +1,4 @@
-﻿
-article,
+﻿article,
 aside,
 details,
 figcaption,
@@ -121,7 +120,8 @@ input.rating {
     }
 
 label.rating {
-  width: 24px;
+  width: 30px;
+  letter-spacing: 0px;
 }
 
 input.rating:checked ~ label.rating:before {
@@ -130,6 +130,23 @@ input.rating:checked ~ label.rating:before {
 
 label.rating:before {
    content: "\2606";
+   letter-spacing: 0px;
+}
+
+input.rating-2:checked ~ label.rating-2:after {
+    content: "\1F610";
+}
+
+input.rating-3:checked ~ label.rating-3:after {
+    content: "\1F642";
+}
+
+input.rating-4:checked ~ label.rating-4:after {
+    content: "\1F600";
+}
+
+input.rating-5:checked ~ label.rating-5:after {
+    content: "\1F601";
 }
 
 h1 {
@@ -336,7 +353,6 @@ nav ul li {
 nav ul li a {
     padding: 0 5px;
     color:  #0081ff;
-;
 }
 
 .stamp {
@@ -350,6 +366,75 @@ nav ul li a {
 
 #contact {
     padding-top: 30px;
+}
+
+footer {
+    background-color: #f0f7d0;
+    font-family: Amaranth;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: initial;
+}
+
+footer h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #000;
+}
+
+footer ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+
+}
+
+footer form {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+footer input {
+  position: relative;
+  top: 0;
+  background-color: #ffffff;
+  color: #898B8C;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+footer button {
+  position: relative;
+  top: -50px;
+  background-color: #259af4;
+  color: #ffffff;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  border-radius: 5px;
+}
+
+footer button:hover {
+  background-color: #27B2FF;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer form:hover > input {
+  top: 50px;
+  border-radius: 0 0 5px 5px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+footer form:hover > button {
+  border-radius: 5px 5px 0 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 @media only screen and (max-width: 767px) {
