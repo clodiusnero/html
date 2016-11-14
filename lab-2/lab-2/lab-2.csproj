@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="recepie.php" />
     <Content Include="img\Ibanez.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -107,7 +108,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="computer.html" />
+    <Content Include="guitar.html" />
     <Content Include="questions.html" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />

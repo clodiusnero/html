@@ -285,9 +285,6 @@ nav ul li a {
 
 .slides * {
     user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
     -webkit-touch-callout: none;
 }
 
@@ -378,13 +375,6 @@ input:checked + .slide-container .nav label {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-input#img-1:checked ~ .nav-dots label#img-dot-1,
-input#img-2:checked ~ .nav-dots label#img-dot-2,
-input#img-3:checked ~ .nav-dots label#img-dot-3,
-input#img-4:checked ~ .nav-dots label#img-dot-4
- {
-	background: rgba(0, 0, 0, 0.8);
-}
 
 .television {
     background: #04668c;
